@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Tablero Meteorológico</title>
+</head>
+<body>
+    <header class="hero">
+        <h1>Weather Dashboard</h1>
+    </header>
+    <main class="flex-row justify-space-between">
+        <div>
+            <div id="container-left">
+                <h3>Search for a City :</h3>
+                <form id="city-form">
+                  <label class="form-label" for="cityname">Ciudad</label>
+                  <input name="cityname" id="cityname" type="text" autofocus="true"  />
+                  <button type="submit" id="search-botton">Search</button>
+                </form>
+                <div id="search-history"></div><!--botones para busquedas mas frecuentes-->
+            </div>    
+            <div id="container-right">
+                <div id="today-container">
+                    <h2 id="city-name">Ciudad</h2>
+                    <h2 id="date-today">Fecha</h2>
+                    <img src="https://via.placeholder.com/200" alt="icon weather" />
+                    <hr/>
+                    <div id="today-info"></div>
+                </div> 
+                <div id="5Days-container">
+                    <h3>5-Days Forecast :</h3>
+                    <hr/>
+                    <div id = "5Days-info"></div>
+                </div>
+            </div>    
+        </div>                
+   </main>
+    <script src="assets/js/script.js" ></script>
+</body>
+</html>
