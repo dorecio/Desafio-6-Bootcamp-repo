@@ -6,7 +6,7 @@ html {
 
 /* Establecemos formato en body */
 body {
-    width: 100%;
+    width: 95%;
     margin: 0 auto;
   
     
@@ -29,9 +29,15 @@ header {
     color: white;
 }
 
+.main-containers {
+      justify-content:space-between;
+  
+}
+
 #container-left {
-  width: 35%;
+  width: 25%;
   justify-content: center;
+  margin :10px;
 }
 
 #city-form,
@@ -39,9 +45,31 @@ header {
 #cityname,
 #bottons{
     width: 100%;
+    margin: 5px;
 }
 
 #city-form {
-   text-decoration-line: underline;
+   text-decoration-line: ;
 }
+
+#search-botton {
+    background-color: rgb(118, 139, 233);
+    line-height: 1.5;
+   
+
+}
+
+.container-right {
+    width: 65%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#bottons {
+   
+   background-color: rgb(143, 150, 184);
+    line-height: 1.5;
+}
+
 
