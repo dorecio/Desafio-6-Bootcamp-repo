@@ -11,12 +11,12 @@
     <header class="hero">
         <h1>Weather Dashboard</h1>
     </header>
-    <main class="flex-row justify-space-between">
-        <div>
+    <main class="main-container">
+        <div class="containers">
             <div id="container-left">
                 <h3>Search for a City :</h3>
                 <form id="city-form">
-                  <input name="cityname" id="cityname" type="text" autofocus="true"  />
+                  <input name="cityname" id="cityname" type="text" autofocus="true"/>
                   <button type="submit" id="search-botton">Search</button>
                 </form>
                 <hr/>
@@ -24,14 +24,15 @@
             </div>    
             <div id="container-right">
                 <div id="today-container">
-                    <h2 id="name-today">Ciudad</h2>
-                    <h2 id="date-today">Fecha</h2>
-                    <img id ='icon-today'/>
-                    <hr/>
-                    <div id="today-info"></div>
-                </div> 
-                <div id="days-container">
-                    <h3>5-Days Forecast :</h3>
+                   <div id="info">
+                      <h2 id="name-today"></h2>
+                      <h2 id="date-today"></h2>
+                      <img id ='icon-today'/>
+                   </div>  
+                   <div id="today-info"></div>
+                </div>
+                <div>
+                    <h3 id="days-container">5-Days Forecast :</h3>
                     <hr/>
                 </div>
             </div>    
