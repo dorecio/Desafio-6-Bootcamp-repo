@@ -16,7 +16,6 @@
             <div id="container-left">
                 <h3>Search for a City :</h3>
                 <form id="city-form">
-                  <label class="form-label" for="cityname">Ciudad</label>
                   <input name="cityname" id="cityname" type="text" autofocus="true"  />
                   <button type="submit" id="search-botton">Search</button>
                 </form>
@@ -24,16 +23,15 @@
             </div>    
             <div id="container-right">
                 <div id="today-container">
-                    <h2 id="city-name">Ciudad</h2>
+                    <h2 id="name-today">Ciudad</h2>
                     <h2 id="date-today">Fecha</h2>
-                    <img src="https://via.placeholder.com/200" alt="icon weather" />
+                    <img id ='icon-today'/>
                     <hr/>
                     <div id="today-info"></div>
                 </div> 
-                <div id="5Days-container">
+                <div id="days-container">
                     <h3>5-Days Forecast :</h3>
                     <hr/>
-                    <div id = "5Days-info"></div>
                 </div>
             </div>    
         </div>                
