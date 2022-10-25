@@ -44,7 +44,7 @@ function despliega(data) {
     todayInfoEl.innerHTML = '';
     pronosticoEl.innerHTML = '';
     nameTodayEl.textContent = data.city.name;
-    dateTodayEl.textContent = data.list[0].dt_txt;
+    dateTodayEl.textContent = '(' + data.list[0].dt_txt + ')';
     iconTodayEl.setAttribute('src', data.list[0].weather[0].icon);
     iconTodayEl.setAttribute('atl', 'icon weather');
     var temp = document.createElement('h3');
@@ -69,12 +69,13 @@ function despliega(data) {
         var humidityFuture = document.createElement('h4');
         humidityFuture.textContent = 'Humidity: ' + data.list[i].main.humidity;
         var container = document.createElement('div');
+        container.setAttribute('id', 'recuadros');
         container.appendChild(date);
         container.appendChild(iconFuture);
         container.appendChild(tempFuture);
         container.appendChild(windFuture);
         container.appendChild(humidityFuture);
-        pronosticoEl.append(container);
+        pronosticoEl.appendChild(container);
     }
 }
 
